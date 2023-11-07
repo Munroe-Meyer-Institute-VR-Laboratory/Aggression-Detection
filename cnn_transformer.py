@@ -199,7 +199,7 @@ def scheduler(epoch, lr):
         return lr * tf.math.exp(-0.01)
 
 
-def compile_cnn_transformer(seq_len, num_features, classes, dense_dim=4, num_heads=10):
+def compile_cnn_transformer(seq_len, num_features, classes, dense_dim=4, num_heads=1):
     sequence_length = seq_len
     embed_dim = num_features
 
